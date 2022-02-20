@@ -50,8 +50,7 @@ main {
 }
 
 .roll-dice {
-  height: 50px;
-  width: 100px;
+  padding: 0.75em 1.5em;
   border: none;
   border-radius: 6px;
   background-color: #5035ff;
