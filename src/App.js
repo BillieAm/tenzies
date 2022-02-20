@@ -7,7 +7,13 @@ export default function App() {
   const [tenzies, setTenzies] = React.useState(false);
 
   React.useEffect(() => {
-    console.log("Dice state changed");
+    const allHeld = dice.every((die) => die.isHeld);
+    const firstValue = dice[0].value;
+    const allSameValue = dice.every((die) => die.value === firstValue);
+    if (allHeld && allSameValue) {
+      setTenzies(true);
+      console.log("You won!");
+    }
   }, [dice]);
 
   function generateNewDie() {
