@@ -21,10 +21,21 @@ main {
   align-items: center;
 }
 
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.instructions {
+  margin-top: 0;
+  text-align: center;
+}
+
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   grid-gap: 1em;
+  margin-bottom: 2.5em;
 }
 
 .die {
