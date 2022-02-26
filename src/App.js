@@ -2,6 +2,7 @@ import React from "react";
 import Die from "./Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import Scores from "./Scores";
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
@@ -73,7 +74,7 @@ export default function App() {
         Roll until all dice are the same. Click each die to freeze it at its
         current value between rolls.
       </p>
-      <p>Rolls: {rollsCount}</p>
+      <Scores rollsCount={rollsCount} />
       <div className="dice-container">{diceElements}</div>
       <button className="roll-dice" onClick={rollDice}>
         {tenzies ? "New Game" : "Roll"}
