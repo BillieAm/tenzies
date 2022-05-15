@@ -1,5 +1,4 @@
-import React from "react";
-import dieDots from "./utils/dieDots";
+import dieDots from "../utils/dieDots";
 
 export default function Die(props) {
   const styles = {

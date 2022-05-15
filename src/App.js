@@ -1,7 +1,7 @@
 import useTenzies from "./hooks/useTenzies";
-import Die from "./Die";
+import Die from "./components/Die";
+import Scores from "./components/Scores";
 import Confetti from "react-confetti";
-import Scores from "./Scores";
 
 export default function App() {
   const { dice, tenzies, rollsCount, rollDice, holdDice } = useTenzies();
