@@ -1,8 +1,6 @@
-import React from "react";
-
-export default function DieDots(props) {
+export default function dieDots(value) {
   let dotsLocationArr;
-  switch (props.value) {
+  switch (value) {
     case 1:
       dotsLocationArr = ["five"];
       break;
@@ -23,9 +21,11 @@ export default function DieDots(props) {
       break;
   }
 
-  const dotElements = dotsLocationArr.map((dotLocation, index) => (
+  return dotsLocationArr;
+
+  /*   const dotElements = dotsLocationArr.map((dotLocation, index) => (
     <div key={index} className={`dot ${dotLocation}`}></div>
   ));
 
-  return <div className="dots-container">{dotElements}</div>;
+  return <div className="dots-container">{dotElements}</div>; */
 }
