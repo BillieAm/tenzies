@@ -23,8 +23,8 @@ export default function App() {
         Roll until all dice are the same. Click each die to freeze it at its
         current value between rolls.
       </p>
-      <Scores rollsCount={rollsCount} />
       <div className="dice-container">{diceElements}</div>
+      <Scores rollsCount={rollsCount} />
       <button className="roll-dice" onClick={rollDice}>
         {tenzies ? "New Game" : "Roll"}
       </button>
