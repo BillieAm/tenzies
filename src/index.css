@@ -8,6 +8,9 @@ body {
   min-height: 100vh;
   font-family: "Macondo", cursive;
   padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
